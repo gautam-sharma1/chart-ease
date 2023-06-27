@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "@/components/Layout";
 import Upload from "@/components/Upload";
 import Script from "next/script";
+import Head from "next/head";
+import Hero from "@/components/Hero";
 
 function Home(props) {
   return (
@@ -20,7 +22,12 @@ function Home(props) {
 
     `}
       </Script>
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <title>Chart Ease</title>
+      </Head>
       <Layout>
+        <Hero />
         <Upload />
       </Layout>
     </>

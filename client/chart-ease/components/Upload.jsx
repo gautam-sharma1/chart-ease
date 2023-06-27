@@ -23,6 +23,8 @@ export default function Upload() {
         let selectedFile = e.target.files[0];
         if (selectedFile) {
             if (selectedFile && fileTypes.includes(selectedFile.type)) {
+
+                setUploading(false);
                 setTypeError(null);
                 let reader = new FileReader();
                 reader.readAsArrayBuffer(selectedFile);
@@ -45,7 +47,7 @@ export default function Upload() {
     // submit event
     const handleFileSubmit = (e) => {
         e.preventDefault();
-        setUploading(true);
+
         if (excelFile !== null) {
 
             const workbook = XLSX.read(excelFile, { type: 'buffer' });
@@ -56,12 +58,12 @@ export default function Upload() {
             //setExcelData(data.slice(0, 10));
 
         }
-        setUploading(false);
+
 
     }
 
     return (
-        <section>
+        <section id="upload">
             <div className="flex-col justify-between mt-5 p-15">
                 <div className="text-xl">
                     <h2>Upload Data</h2>

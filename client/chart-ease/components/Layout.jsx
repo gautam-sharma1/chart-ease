@@ -9,9 +9,9 @@ export default function Layout({ children }) {
 
     return (
         <>
-            <div className="mb-10 h-full max-w-screen overflow-auto font-lora">
+            <div className="h-full max-w-screen overflow-auto">
                 <NavBar navItems={navItems} routes={routes} />
-                <div className="mt-20 px-20">
+                <div className="px-20">
                     {children}
                 </div>
 

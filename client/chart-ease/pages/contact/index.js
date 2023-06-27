@@ -6,7 +6,7 @@ function Contact(props) {
   return (
     <>
       <Layout>
-        <div class="hero min-h-screen bg-base-200">
+        <div class="hero min-h-screen">
           <div>
             <Link
               className="btn btn-ghost normal-case text-xl px-20"

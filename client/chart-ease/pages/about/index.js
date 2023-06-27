@@ -4,7 +4,7 @@ function About(props) {
   return (
     <>
       <Layout>
-        <div class="hero min-h-screen bg-base-200">
+        <div class="hero min-h-screen">
           Welcome to Chart-Ease, where we believe in turning the mundane into
           the magnificent, the numbers into works of art, and the data into
           delightful visual stories. Why did we embark on this journey, you may
