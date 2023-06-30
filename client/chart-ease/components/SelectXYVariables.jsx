@@ -41,6 +41,7 @@ export default function SelectXYVariables({ type_of_chart, excelData }) {
     return (
         <><div>Select Variables</div>
             <div>
+
                 X1
                 <div className="join mx-20">
                     {columnName.map((col_name, idx) => {

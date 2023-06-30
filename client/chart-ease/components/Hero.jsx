@@ -3,16 +3,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 export default function Hero() {
     return (
-        <div className="hero min-h-screen">
+        <div className="hero min-h-screen px-20">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <Image
+                {/* <Image
                     className="rounded-xlg shadow-2xl"
                     src="/images/chartease.gif"
                     loading="lazy"
                     width={700}
                     height={700}
                     alt="Chart Ease in action"
-                />
+                    
+                /> */}
 
                 <div>
                     <h1 className="text-5xl font-bold">Hello there 👋🏼</h1>
@@ -20,6 +21,7 @@ export default function Hero() {
                     <Link className="btn btn-primary normal-case" href="#upload">Get Started</Link>
                 </div>
             </div>
+
         </div>
     )
 }

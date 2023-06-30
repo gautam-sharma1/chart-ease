@@ -1,13 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Footer() {
+export default function Footer({ navItems, routes }) {
     return (
 
         <footer className="footer footer-center p-10 text-base-content rounded mt-80">
             <div className="grid grid-flow-col gap-4">
-                <a className="link link-hover" href="/about">About us</a>
-                <a className="link link-hover" href="/contact">Contact</a>
+                {navItems.map((item, index) => {
+                    return <a href={routes[index]}>{item}</a>
+                })}
+
             </div>
             <div>
                 <div className="grid grid-flow-col gap-4">

@@ -4,18 +4,18 @@ import React from 'react'
 
 
 export default function Layout({ children }) {
-    const navItems = ["Home", "Projects", "About", "Contact Me"];
-    const routes = ["/", "/projects", "/about", "/contact-me"];
+    const navItems = ["About us", "Contact"];
+    const routes = ["/about", "/contact"];
 
     return (
         <>
             <div className="h-full max-w-screen overflow-auto">
                 <NavBar navItems={navItems} routes={routes} />
-                <div className="px-20">
+                <div>
                     {children}
                 </div>
 
-                <Footer />
+                <Footer navItems={navItems} routes={routes} />
                 {/*<Footer navItems={navItems} routes={routes} />*/}
 
             </div>

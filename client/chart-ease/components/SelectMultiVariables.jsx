@@ -68,15 +68,18 @@ export default function SelectMultiVariables({ type_of_chart, excelData }) {
 
     return (
         <><div>Select Variables</div>
-            <div>
+            <div className='my-10 flex flex-row items-center'>
+
                 X1
+
+
                 <div className="join mx-20">
                     {columnName.map((col_name, idx) => {
                         return <input key={idx} className="join-item btn" type="radio" name="x1" aria-label={col_name} value={col_name} onChange={handleChange} />
                     })}
                 </div>
             </div>
-            <div>
+            <div className='my-10 flex flex-row items-center'>
                 Y1
                 <div className="join mx-20">
                     {columnName.map((col_name, idx) => {

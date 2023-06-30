@@ -4,6 +4,7 @@ import Upload from "@/components/Upload";
 import Script from "next/script";
 import Head from "next/head";
 import Hero from "@/components/Hero";
+import Action from "@/components/Action";
 
 function Home(props) {
   return (
@@ -28,6 +29,7 @@ function Home(props) {
       </Head>
       <Layout>
         <Hero />
+        <Action />
         <Upload />
       </Layout>
     </>
