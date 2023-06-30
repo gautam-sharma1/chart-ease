@@ -64,7 +64,7 @@ export default function Upload() {
 
     return (
         <section id="upload" className='px-20'>
-            <div className="flex-col justify-between">
+            <div className="flex-col justify-\">
                 <div className="text-2xl">
                     Upload Data
                 </div>

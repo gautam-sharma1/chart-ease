@@ -7,7 +7,7 @@ export default function Footer({ navItems, routes }) {
         <footer className="footer footer-center p-10 text-base-content rounded mt-80">
             <div className="grid grid-flow-col gap-4">
                 {navItems.map((item, index) => {
-                    return <a href={routes[index]}>{item}</a>
+                    return <a key={index} href={routes[index]}>{item}</a>
                 })}
 
             </div>
@@ -19,7 +19,7 @@ export default function Footer({ navItems, routes }) {
                 </div>
             </div>
             <div>
-                <p>Copyright {"© "}{" "}{new Date().getFullYear()} - Made with ❤️ by <Link href="https://www.sharmagautam.com">Gautam Sharma</Link></p>
+                <p>Copyright {"© "}{" "}{new Date().getFullYear()} - Made with ❤️ by <Link href="https://www.sharmagautam.com">33 Labs</Link></p>
             </div>
         </footer>
 

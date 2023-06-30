@@ -13,6 +13,7 @@
     "autoprefixer": "10.4.14",
     "canvg": "^4.0.1",
     "file-saver": "^2.0.5",
+    "framer-motion": "^10.12.17",
     "html2canvas": "^1.4.1",
     "next": "13.4.7",
     "postcss": "8.4.24",
