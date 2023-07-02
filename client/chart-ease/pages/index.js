@@ -13,7 +13,7 @@ function Home(props) {
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-1RQ9Q9224H"
       ></Script>
-      {/* <Script>
+      <Script>
         {`
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -22,7 +22,7 @@ function Home(props) {
   gtag('config', 'G-1RQ9Q9224H');
 
     `}
-      </Script> */}
+      </Script>
       <Script>
         {`
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
