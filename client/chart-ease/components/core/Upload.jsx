@@ -1,6 +1,6 @@
 import React from 'react'
-import Data from "./Data"
-import SelectPlot from './SelectPlot';
+import Data from "../Data"
+import SelectPlot from '../SelectPlot';
 import { useState } from "react";
 import * as XLSX from 'xlsx';
 
@@ -77,7 +77,7 @@ export default function Upload() {
                     <input type="file" className="file-input file-input-bordered file-input-success w-full max-w-xs form-control" required onChange={handleFile} />
                     <br />
                     <br />
-                    <button type="submit" className="btn btn-success btn-md">UPLOAD</button>
+                    <button type="submit" id="upload-button" className="btn btn-success btn-md">UPLOAD</button>
                     <br />
                     <br />
                     {typeError && (

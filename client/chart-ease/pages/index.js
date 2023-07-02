@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "@/components/Layout";
-import Upload from "@/components/Upload";
+import Layout from "@/components/core/Layout";
+import Upload from "@/components/core/Upload";
 import Script from "next/script";
 import Head from "next/head";
-import Hero from "@/components/Hero";
-import Action from "@/components/Action";
+import Hero from "@/components/core/Hero";
+import Action from "@/components/core/Action";
 
 function Home(props) {
   return (
@@ -22,6 +22,15 @@ function Home(props) {
   gtag('config', 'G-1RQ9Q9224H');
 
     `}
+      </Script>
+      <Script>
+        {`<!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KKDDCGR');</script>
+      <!-- End Google Tag Manager -->`}
       </Script>
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
