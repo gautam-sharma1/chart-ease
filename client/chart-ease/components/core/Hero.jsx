@@ -49,7 +49,7 @@ export default function Hero() {
 
                 <div>
                     <h1 className="text-5xl font-bold">Hello there 👋🏼</h1>
-                    <p className="py-6">Chart Ease is the ultimate solution for seamless data uploading, analysis, and visualization. With our powerful Excel integration feature, you can unlock the full potential of your data and transform it into actionable insights like never before</p>
+                    <p className="py-6 text-3xl">Chart Ease is the ultimate solution for seamless data uploading, analysis, and visualization. With our powerful Excel integration feature, you can unlock the full potential of your data and transform it into actionable insights like never before</p>
                     <Link className="btn btn-primary normal-case" href="#upload">Get Started</Link>
                 </div>
             </div>
